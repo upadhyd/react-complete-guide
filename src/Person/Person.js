@@ -1,9 +1,9 @@
 import React from "react";
-import "./Person.css";
+import cssClasses from "./Person.css";
 
 const person = props => {
   return (
-    <div className="Person">
+    <div className={cssClasses.Person}>
       <p onClick={props.click}>
         This is {props.name} and I'm is the greatest developer in the world. Age
         :
