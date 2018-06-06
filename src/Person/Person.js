@@ -2,6 +2,12 @@ import React from "react";
 import cssClasses from "./Person.css";
 
 const person = props => {
+  let rdnNumb = Math.random();
+
+  if (rdnNumb > 0.7) {
+    throw new Error("Something went wrong");
+  }
+
   return (
     <div className={cssClasses.Person}>
       <p onClick={props.click}>
